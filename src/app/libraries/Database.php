@@ -1,5 +1,9 @@
-
 <?php
+
+namespace App;
+
+use PDO;
+
 class Database
 {
     private $dbHost = DB_HOST;
@@ -20,7 +24,7 @@ class Database
         );
         try {
             $this->dbHandler = new PDO($conn, $this->dbUser, $this->dbPass, $options);
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             $this->error = $e->getMessage();
             echo $this->error;
         }

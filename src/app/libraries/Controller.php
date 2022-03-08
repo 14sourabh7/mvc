@@ -1,5 +1,7 @@
 <?php
 // load the model and view
+namespace App;
+
 class Controller
 {
     public function model($model)

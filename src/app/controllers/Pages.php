@@ -2,6 +2,8 @@
 
 // namespace App;
 
+use App\Controller;
+
 class Pages extends Controller
 {
     public function __construct()
